@@ -6,8 +6,8 @@ function drop (){
 		disX = ev.pageX - el.offsetLeft
 		disY = ev.pageY - el.offsetTop
 		document.onmouseup = function (ev){
-			el.style.left = disX
-			el.style.top = disY
+			el.style.left = ev.clienX - disX + 'px'
+			el.style.top = ev.clientY - disY + 'px'
 		}
 	}
 }
